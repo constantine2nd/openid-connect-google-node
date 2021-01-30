@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!-- in views/users.ejs -->
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>User Details</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" 
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+      crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+      <form action="/logout">
+        <div class="card mx-auto w-100 mt-3">
+         <div><h1 class="card-header">Welcome <em><%= user.name %></em></h1></div>
+         <div class="card-body">
+            <h3 class="card-title">Here are your user details:</h3>
+            <p class="card-text">
+              <% Object.keys(user).forEach(function(item) { %>
+                <b><%- item %></b>: <%- user[item] %>
+                <br />
+              <% }); %>
+            </p>
+          </div>
+        <input type="submit" class="btn btn-danger" value="Logout">
+      </form>
+    </div>
+  </body>
+</html>

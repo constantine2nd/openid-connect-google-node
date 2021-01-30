@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title><%= title %></title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" 
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+          crossorigin="anonymous"
+    >
+  </head>
+  <body>
+    <div class="container">
+      <form action="/auth">
+        <div class="card mx-auto w-100 mt-3">
+          <div class="card-header"><h3><%= title %></h3></div>
+          <div class="card-body">
+            <h5 class="card-title"><%= description %></h5>
+          </div>
+        <input type="submit" class="btn btn-primary" value="Login">
+      </form>
+    </div>
+  </body>
+</html>
