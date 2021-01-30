@@ -2,6 +2,8 @@
 
 This is the Node.js web application showing how to configure and enable OpenID Connect middleware in case of Google as the Identity Provider using Express web framework, [Passport](https://github.com/jaredhanson/passport) authentication middleware and [openid-client](https://github.com/panva/node-openid-client).
 
+[Demostration video](https://drive.google.com/file/d/1VVzDMtnmDQSFK1XJrBz6mSkVsUzp4gNE/view?usp=sharing)
+
 ## Running the app
 
 Run `npm install` to install all dependencies.
