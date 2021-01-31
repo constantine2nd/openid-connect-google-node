@@ -11,4 +11,12 @@ Run `npm install` to install all dependencies.
 Run `npm start` to start the server.
 
 You can access the app on [http://localhost:3000](http://localhost:3000).
+
+Please do not forget to set up client id and secret in file `app.js`:
+```
+client_id: 'YOUR_CLIENT_ID',
+client_secret: 'YOUR_CLIENT_SECRET',
+```
+In case do do not have it you can use https://console.developers.google.com to create one and tweak a consent screen as well.
+
 # openid-connect-google-node
