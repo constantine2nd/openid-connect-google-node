@@ -14,7 +14,9 @@
     <div class="container">
       <form action="/logout">
         <div class="card mx-auto w-100 mt-3">
-         <div><h1 class="card-header">Welcome <em><%= user.name %></em></h1></div>
+         <div>
+           <h1 class="card-header"><img src="<%= user.picture %>"></img>Welcome <em><%= user.name %></em></h1>
+          </div>
          <div class="card-body">
             <h3 class="card-title">Here are your user details:</h3>
             <p class="card-text">
